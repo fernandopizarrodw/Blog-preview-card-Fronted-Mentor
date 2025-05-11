@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--Yellow);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    margin: 156px 19px 161px 24px;
+    box-shadow: 8px 8px 0px hsl(0, 0%, 7%);
+    padding: 24px;
+    padding-top: 0;
+    width: 327px;
+    height: 495px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid black;
+
+
+
+}
+
+.illustration {
+    width: 284px;
+    height: 200px;
+    margin: 24px 24px 21px 24px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* evita espacio extra debajo de img */
+}
+
+.text {
+  max-width: 336px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.learn {
+    width: 73px;
+    height: 26px;
+    background-color: var(--Yellow);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    padding: 4px 12px;
+    border-radius: 5px;
+
+}
+
+.date {
+    margin-top: 20px;
+    width: 140px;
+    height: 18px;
+    font-size: 12px;
+     font-weight: 700;
+}
+
+h1 {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.description {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    width: 279px;
+    height: 63px;
+}
+
+.avatar {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    width: 279px;
+    height: 32px;
+    padding: 0;
+}
+
+.avatar img {
+    width: 32px;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 85px;
+    height: 21px;
+
+
+}
+
+.attribution {
+    font-size: 18px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media(min-width:992px) {
+    .container {
+        margin: 128px auto 128px auto;
+        width: 384px;
+        height: 510px;
+
+    }
+
+    .illustration {
+        width: 336px;
+        height: 200px;
+        
+    }
+
+    .text {
+        width: 336px;
+       
+    }
+
+    
+    .date {
+        width: 140px;
+        height: 18px;
+       
+    }
+
+    
+
+    
+
+    .avatar {
+        margin-top: 35px;
+       
+        width: 336px;
+       
+    }
+   
+
+
+    h1:hover {
+        color: var(--Yellow);
+        cursor: pointer;
+    }
+
+
+
+}
